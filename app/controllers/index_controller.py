@@ -8,3 +8,10 @@ class IndexController(ControllerBase):
     def get():
         name = "Oun Muhammad"
         return render_template('index.html', name=name)
+
+    class AboutController(ControllerBase):
+        @staticmethod
+        def get():
+            name = "Oun"
+            return render_template('about.html', name=name)
+
